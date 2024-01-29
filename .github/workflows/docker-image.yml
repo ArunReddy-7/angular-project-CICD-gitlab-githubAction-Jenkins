@@ -45,7 +45,7 @@ jobs:
         run: |
           docker build -t docker-test-angular .
           docker login -u 10449 -p ${{ secrets.DOCKERHUB_TOKEN }}
-          docker tag docker-test 10449/docker-test-angular
+          docker tag docker-test-angular 10449/docker-test-angular
           docker push 10449/docker-test-angular
 
       - name: Disable strict host key checking
