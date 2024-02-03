@@ -53,6 +53,6 @@ jobs:
 
       - name: SSH into server and deploy
         run: |
-          ssh root@61.97.102.90 'docker pull 10449/docker-test-angular && docker run -d -p 5200:5200 10449/docker-test-angular'
+          ssh root@161.97.102.90 'docker pull 10449/docker-test-angular && docker run -d -p 5200:5200 10449/docker-test-angular'
 #          ssh  root@95.130.227.6 "docker pull 10449/docker-test && docker-compose up -d"
           
